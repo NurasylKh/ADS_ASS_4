@@ -2,16 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Represents a vertex in a graph.
+ * A class that represents a vertex in a graph.
  *
  * @param <V> The type of data held by the vertex.
  */
 public class Vertex<V> {
-
-    // The data held by the vertex.
+    // The data associated with the vertex.
     private V data;
-
-    // The adjacency list of the vertex, managing the adjacent vertices and their edge weights.
+    // An object that manages the adjacent vertices and their edge weights.
     private AdjacencyList adjacencyList;
 
     /**
@@ -20,6 +18,7 @@ public class Vertex<V> {
      * @param data The data held by the vertex.
      */
     public Vertex(V data) {
+        // Initialize the instance variables with the given data and a new AdjacencyList object.
         this.data = data;
         this.adjacencyList = new AdjacencyList();
     }
@@ -30,6 +29,8 @@ public class Vertex<V> {
      * @return The data held by the vertex.
      */
     public V getData() {
+        // Return the data associated with the vertex.
+
         return data;
     }
 
@@ -40,6 +41,8 @@ public class Vertex<V> {
      * @param weight The weight of the edge to the adjacent vertex.
      */
     public void addAdjacentVertex(Vertex<V> destination, double weight) {
+        // Delegate the task of adding an adjacent vertex and its edge weight to the AdjacencyList object.
+
         adjacencyList.add(destination, weight);
     }
 
@@ -56,11 +59,11 @@ public class Vertex<V> {
      * An inner class to manage the adjacent vertices and their edge weights.
      */
     private class AdjacencyList {
-
-        // The map of adjacent vertices and their edge weights.
+        // The map that stores the adjacent vertices and their edge weights.
         private Map<Vertex<V>, Double> adjacentVertices;
 
         public AdjacencyList() {
+            // Initialize the map of adjacent vertices and their edge weights.
             this.adjacentVertices = new HashMap<>();
         }
 
@@ -71,6 +74,7 @@ public class Vertex<V> {
          * @param weight The weight of the edge to the adjacent vertex.
          */
         public void add(Vertex<V> destination, double weight) {
+            // Add the given adjacent vertex and its edge weight to the map.
             adjacentVertices.put(destination, weight);
         }
 
