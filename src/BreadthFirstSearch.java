@@ -6,7 +6,7 @@ import java.util.*;
  */
 public class BreadthFirstSearch<V> extends Search<V> {
     /**
-     * Constructs a breadth-first search algorithm for the given graph starting from the source vertex.
+     * Constructs a breadth-first search algorithm for the given graph starting from the source vertex
      *
      * @param graph The weighted graph to search
      * @param source The source vertex to start the search from
