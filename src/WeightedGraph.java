@@ -73,7 +73,7 @@ import java.util.*;
      * Returns the list of edges adjacent to the vertex associated with the given data.
      *
      * @param v The data associated with the vertex.
-     * @return The list of edges adjacent to the vertex associated with the given data, or an empty list if the vertex has no adjacent edges.
+     * @return The list of edges adjacent to the vertex associated with the given data , or an empty list if the vertex has no adjacent edges.
      */
     public List<Edge<V>> adjacencyList(V v) {
         // Return the list of edges adjacent to the vertex associated with the given data, or an empty list if the vertex has no adjacent edges.
