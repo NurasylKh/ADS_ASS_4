@@ -46,12 +46,12 @@ public class Search<V> {
      * @return An iterable representing the path to the vertex, or null if no path exists.
      */
     public Iterable<V> pathTo(V v) {
-        // If there is no path to the given vertex, return null.
+        // If there is no path to the given vertex, return null
         if (!hasPathTo(v))
             return null;
-        // Create a linked list to store the path from the source vertex to the given vertex.
+        // Create a linked list to store the path from the source vertex to the given vertex
         LinkedList<V> linkedList = new LinkedList<>();
-        // Iterate through the edges in the edgeTo map, starting from the given vertex and moving towards the source vertex.
+        // Iterate through the edges in the edgeTo map, starting from the given vertex and moving towards the source vertex
         for (V i = v; !i.equals(source); i = edgeTo.get(i))
             linkedList.push(i);
         // Add each vertex to the beginning of the linked list to maintain the correct order of the path
