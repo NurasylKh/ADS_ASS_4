@@ -56,7 +56,7 @@ public class Main {
          */
         private static void printPath(Iterable<String> path) {
             for (String v : path) {
-                System.out.print(v + " > ");
+                System.out.print(v + " to ");
             }
             System.out.println();
         }
