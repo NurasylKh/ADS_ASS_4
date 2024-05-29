@@ -17,7 +17,7 @@ public class Edge<V> {
         this.w = w;
         this.weight = weight;
     }
-    //Returns one of the vertices connected by the edge (either v or w)
+    //Returns one of the vertices connected by the edge  v or w
 
     public V either() {
         return v;
