@@ -54,7 +54,7 @@ public class Search<V> {
         // Iterate through the edges in the edgeTo map, starting from the given vertex and moving towards the source vertex.
         for (V i = v; !i.equals(source); i = edgeTo.get(i))
             linkedList.push(i);
-        // Add each vertex to the beginning of the linked list to maintain the correct order of the path.
+        // Add each vertex to the beginning of the linked list to maintain the correct order of the path
         linkedList.push(source);
 
         return linkedList;
